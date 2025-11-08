@@ -1,111 +1,56 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Radiohead — Conciertos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Radiohead — Conciertos </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
+<header>
+<div>
+<h1>Experiencia en vivo de Radiohead</h1>
+<p>Los mejores conciertos en la historia de su carrera</p>
+</div>
+<nav>
+<ul>
+<li><a href="videos.html">Videos</a></li>
+<li><a href="premios.html">Premios y reconocimientos</a>/li>
 
-<!-- Encabezado -->
-<header class="bg-dark text-white py-3">
-  <div class="container">
-    <h1 class="mb-0">Experiencia en vivo de Radiohead</h1>
-    <p class="mb-0">Los mejores conciertos en la historia de su carrera</p>
-  </div>
+</ul>
+</nav>
 </header>
 
-<!-- Menú de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Radiohead</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="albums.html">Discografía</a></li>
-        <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
-        <li class="nav-item"><a class="nav-link active" href="conciertos.html">Conciertos</a></li>
-        <li class="nav-item"><a class="nav-link" href="arte.html">Arte</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="premios.html">Premios y reconocimientos</a></li>
-        <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
-        <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<!-- Sección de conciertos -->
 <main>
-  <section class="container my-5">
-    <h2 class="text-center mb-4">Conciertos Icónicos de Radiohead</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+<section class="container my-5">
+  <h2 class="text-center mb-4">Galería de Videos</h2>
+  <div class="row" id="galeria-videos"></div>
+</section>
 
-      <div class="col">
-        <div class="card h-100 border-dark">
-          <img src="https://img.youtube.com/vi/Tl0FfF4s3Gw/hqdefault.jpg" class="card-img-top" alt="Glastonbury 1997">
-          <div class="card-body bg-light">
-            <h5 class="card-title">Glastonbury 1997</h5>
-            <p class="card-text">Una actuación legendaria que consolidó a Radiohead como una banda de culto.</p>
-            <a href="https://www.youtube.com/watch?v=Tl0FfF4s3Gw" target="_blank" class="btn btn-dark">Ver concierto</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 border-dark">
-          <img src="https://img.youtube.com/vi/1uYWYKPZ_P0/hqdefault.jpg" class="card-img-top" alt="Reading Festival 2009">
-          <div class="card-body bg-light">
-            <h5 class="card-title">Reading Festival 2009</h5>
-            <p class="card-text">Una mezcla de clásicos y experimentación sonora en un festival icónico.</p>
-            <a href="https://www.youtube.com/watch?v=1uYWYKPZ_P0" target="_blank" class="btn btn-dark">Ver concierto</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 border-dark">
-          <img src="https://img.youtube.com/vi/7qU3i0Vv9Og/hqdefault.jpg" class="card-img-top" alt="Buenos Aires 2009">
-          <div class="card-body bg-light">
-            <h5 class="card-title">Buenos Aires 2009</h5>
-            <p class="card-text">Una noche inolvidable para los fans argentinos, con una energía única.</p>
-            <a href="https://www.youtube.com/watch?v=7qU3i0Vv9Og" target="_blank" class="btn btn-dark">Ver concierto</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Modal para reproducir video -->
-  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-dark">
-        <div class="modal-body p-0">
-          <div class="ratio ratio-16x9">
-            <iframe id="videoFrame" src="" title="Video" allowfullscreen></iframe>
-          </div>
+<!-- Modal para reproducir video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe id="videoFrame" src="" title="Video" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
+</div>
+
 </main>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  <p class="mb-0">© Radiohead — Esta es una plantilla de ejemplo.</p>
-</footer>
 
-<!-- Scripts -->
+  <!-- Footer -->
+  <footer class="text-center mt-5 text-secondary">
+    <p>Comenta que te parecio esta interfaz!       <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li> </p>
+  </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/galeria.js"></script>
+
 
 </body>
 </html>
-	
